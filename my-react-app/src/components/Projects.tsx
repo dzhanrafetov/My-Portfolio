@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import djanamLogo from '../assets/djanam-logo.svg';
@@ -22,18 +22,18 @@ const Projects = ({ language }) => {
         logoSrc: djanamLogo,
         url: 'https://www.instagram.com',
         glowColor: 'rgba(255, 0, 255, 0.5)',
-        techStack: ['React', 'Tailwind CSS', 'Node.js'],
+        techStack: ['PHP', 'JavaScript', 'HTML','CSS'],
       },
-      {
-        title: 'Azteca Premium',
-        role: 'Tobacco Shop Website',
-        time: '/ 2018',
-        imgSrc: azteca,
-        logoSrc: djanamLogo,
-        url: 'https://www.messenger.com',
-        glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
-      },
+      // {
+      //   title: 'Azteca Premium',
+      //   role: 'Tobacco Shop Website',
+      //   time: '/ 2018',
+      //   imgSrc: azteca,
+      //   logoSrc: djanamLogo,
+      //   url: 'https://www.messenger.com',
+      //   glowColor: 'rgba(31, 56, 244, 1)',
+      //   techStack: ['Figma', 'Sketch', 'Photoshop'],
+      // },
       {
         title: 'Skarata ',
         role: 'Restaurant Website',
@@ -42,18 +42,18 @@ const Projects = ({ language }) => {
         logoSrc: skarataLogo,
         url: 'https://www.messenger.com',
         glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
+        techStack: ['JavaScript', 'HTML', 'CSS'],
       },
-      {
-        title: 'Foundation EACF ',
-        role: 'Foundation Website',
-        time: 'Sofia',
-        imgSrc: eacf,
-        logoSrc: eacfLogo,
-        url: 'https://www.messenger.com',
-        glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
-      },
+      // {
+      //   title: 'Foundation EACF ',
+      //   role: 'Foundation Website',
+      //   time: 'Sofia',
+      //   imgSrc: eacf,
+      //   logoSrc: eacfLogo,
+      //   url: 'https://www.messenger.com',
+      //   glowColor: 'rgba(31, 56, 244, 1)',
+      //   techStack: ['Figma', 'Sketch', 'Photoshop'],
+      // },
     ],
     bg: [
       {
@@ -64,18 +64,18 @@ const Projects = ({ language }) => {
         logoSrc: djanamLogo,
         url: 'https://www.instagram.com',
         glowColor: 'rgba(255, 0, 255, 0.5)',
-        techStack: ['React', 'Tailwind CSS', 'Node.js'],
+        techStack: ['PHP', 'JavaScript', 'HTML','CSS'],
       },
-      {
-        title: 'Azteca Premium',
-        role: 'Уебсайт на магазин за тютюн',
-        time: '/ 2018',
-        imgSrc: azteca,
-        logoSrc: djanamLogo,
-        url: 'https://www.messenger.com',
-        glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
-      },
+      // {
+      //   title: 'Azteca Premium',
+      //   role: 'Уебсайт на магазин за тютюн',
+      //   time: '/ 2018',
+      //   imgSrc: azteca,
+      //   logoSrc: djanamLogo,
+      //   url: 'https://www.messenger.com',
+      //   glowColor: 'rgba(31, 56, 244, 1)',
+      //   techStack: ['Figma', 'Sketch', 'Photoshop'],
+      // },
       {
         title: 'Скарата ',
         role: 'Уебсайт на ресторант',
@@ -84,18 +84,18 @@ const Projects = ({ language }) => {
         logoSrc: skarataLogo,
         url: 'https://www.messenger.com',
         glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
+        techStack: ['JavaScript', 'HTML', 'CSS'],
       },
-      {
-        title: 'Фондация EACF ',
-        role: 'Уебсайт на фондация',
-        time: 'София',
-        imgSrc: eacf,
-        logoSrc: eacfLogo,
-        url: 'https://www.messenger.com',
-        glowColor: 'rgba(31, 56, 244, 1)',
-        techStack: ['Figma', 'Sketch', 'Photoshop'],
-      },
+      // {
+      //   title: 'Фондация EACF ',
+      //   role: 'Уебсайт на фондация',
+      //   time: 'София',
+      //   imgSrc: eacf,
+      //   logoSrc: eacfLogo,
+      //   url: 'https://www.messenger.com',
+      //   glowColor: 'rgba(31, 56, 244, 1)',
+      //   techStack: ['Figma', 'Sketch', 'Photoshop'],
+      // },
     ],
   };
 
@@ -183,29 +183,29 @@ const Projects = ({ language }) => {
               }}
             >
               {/* Image Container */}
-             <div
-  className="relative w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 ease-out group-hover:scale-105"
-  style={{
-    borderRadius: '28px',
-    boxShadow: '0px 6px 60px rgba(0, 0, 0, 0.12)',
-    filter: 'brightness(0.8)',
-  }}
->
-  <img
-    src={project.imgSrc}
-    alt={project.title}
-    className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-out"
-    loading="lazy"
-  />
-  <div
-    className="absolute inset-0 transition-all duration-300"
-    style={{
-      filter: 'blur(60px)',
-      opacity: '0.5',
-      borderRadius: 'inherit',
-    }}
-  ></div>
-</div>
+              <div
+                className="relative w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 ease-out group-hover:scale-105"
+                style={{
+                  borderRadius: '28px',
+                  boxShadow: '0px 6px 60px rgba(0, 0, 0, 0.12)',
+                  filter: 'brightness(0.8)',
+                }}
+              >
+                <img
+                  src={project.imgSrc}
+                  alt={project.title}
+                  className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-out"
+                  loading="lazy"
+                />
+                <div
+                  className="absolute inset-0 transition-all duration-300"
+                  style={{
+                    filter: 'blur(60px)',
+                    opacity: '0.5',
+                    borderRadius: 'inherit',
+                  }}
+                ></div>
+              </div>
 
               {/* Project Logo */}
               <div className="absolute top-4 left-4 w-16 h-16 transition-transform duration-300 ease-out group-hover:scale-110">
@@ -213,7 +213,6 @@ const Projects = ({ language }) => {
                   src={project.logoSrc}
                   alt={project.title}
                   className="w-full h-full object-cover rounded-lg"
-                  style={{ filter: 'brightness(0.8)' }} // Darken the logo
                   loading="lazy"
                 />
               </div>
