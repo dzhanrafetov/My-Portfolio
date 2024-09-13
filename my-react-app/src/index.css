@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for any animation or spacing */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+body{
+background-color: rgb(14, 16, 17);
+}
+/* index.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+
+
+
+ @keyframes slide-in-up {
+   0% {
+     transform: translateY(20px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes bounce {
+   0%, 100% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-10px);
+   }
+ }
+
+ /* Apply the animations to classes */
+
+ .animate-fade-in {
+   animation: fade-in 1s ease-out;
+ }
+
+ .animate-fade-in-delayed {
+   animation: fade-in 1.5s ease-out;
+ }
+
+ .animate-slide-in-up {
+   animation: slide-in-up 0.8s ease-out;
+ }
+
+ .animate-bounce {
+   animation: bounce 2s infinite;
+ }
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-wave {
+  animation: wave 2s infinite;
+}
+
+/* Add this in your CSS file or Tailwind's config file */
+@keyframes slide-in-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.translate-y-10 {
+  transform: translateY(10px);
+}
+
+/* Ensure font matching */
+html {
+  font-family: 'Inter', sans-serif;
+
+}
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #4b5563;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #1a202c;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* or whatever height your header has */
+  z-index: 1000;
+}
+
+.hero {
+  padding-top: 80px; /* Same height as the header */
+}
+
+
+
