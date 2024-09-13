@@ -1,6 +1,6 @@
 // src/components/Intro.tsx
 import { motion } from 'framer-motion';
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import us from '../assets/uk2.png'; // Correct import for the US flag
 import bg from '../assets/bg2.png';  // Correct import for the Bulgarian flag
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp, FaViber } from 'react-icons/fa';
 
 const GetInTouch = ({ language }) => {

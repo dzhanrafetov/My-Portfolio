@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import djanamLogo from '../assets/djanam-logo.svg';
 import djanam from '../assets/djanam.png';
 import azteca from '../assets/azteca.png';
-import aztecaLogo from '../assets/azteca-logo.png';
+// import aztecaLogo from '../assets/azteca-logo.png';
 import skarata from '../assets/skarata.png';
 import eacf from '../assets/eacf.png';
 import eacfLogo from '../assets/eacfLogo.png';
