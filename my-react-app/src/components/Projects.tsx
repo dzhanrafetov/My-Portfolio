@@ -183,29 +183,29 @@ const Projects = ({ language }) => {
               }}
             >
               {/* Image Container */}
-              <div
-                className="relative w-full h-60 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 ease-out group-hover:scale-105"
-                style={{
-                  borderRadius: '28px',
-                  boxShadow: '0px 6px 60px rgba(0, 0, 0, 0.12)',
-                  filter: 'brightness(0.8)', // Darken the image
-                }}
-              >
-                <img
-                  src={project.imgSrc}
-                  alt={project.title}
-                  className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-out"
-                  loading="lazy"
-                />
-                <div
-                  className="absolute inset-0 transition-all duration-300"
-                  style={{
-                    filter: 'blur(60px)',
-                    opacity: '0.5',
-                    borderRadius: 'inherit',
-                  }}
-                ></div>
-              </div>
+             <div
+  className="relative w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 ease-out group-hover:scale-105"
+  style={{
+    borderRadius: '28px',
+    boxShadow: '0px 6px 60px rgba(0, 0, 0, 0.12)',
+    filter: 'brightness(0.8)',
+  }}
+>
+  <img
+    src={project.imgSrc}
+    alt={project.title}
+    className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-out"
+    loading="lazy"
+  />
+  <div
+    className="absolute inset-0 transition-all duration-300"
+    style={{
+      filter: 'blur(60px)',
+      opacity: '0.5',
+      borderRadius: 'inherit',
+    }}
+  ></div>
+</div>
 
               {/* Project Logo */}
               <div className="absolute top-4 left-4 w-16 h-16 transition-transform duration-300 ease-out group-hover:scale-110">

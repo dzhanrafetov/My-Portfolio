@@ -16,7 +16,7 @@ const Hero = ({ language }) => {
     const paragraphTimer = setTimeout(() => {
       setShowParagraph(true);
       setShowTyping(false);
-    }, 4000);
+    }, 2400);
 
     return () => {
       clearTimeout(typingTimer);
@@ -28,7 +28,7 @@ const Hero = ({ language }) => {
   useEffect(() => {
     const dotInterval = setInterval(() => {
       setDots((prevDots) => (prevDots.length === 3 ? '' : prevDots + '.'));
-    }, 500);
+    }, 300);
 
     return () => clearInterval(dotInterval);
   }, [showTyping]);
@@ -43,10 +43,10 @@ const Hero = ({ language }) => {
       checkProjects: 'Check My Projects',
     },
     bg: {
-      greeting: 'Здравейте, аз съм Джан',
+      greeting: 'Здравей,Аз съм Джан',
       typing: 'Пишe',
-      paragraph1: 'уеб разработчик, който превръща',
-      paragraph2: 'идеи в реалност.',
+      paragraph1: 'Превръщам идеи в реални,       ',
+      paragraph2: 'функционални уеб проекти.',
       checkProjects: 'Виж моите проекти',
     },
   };
@@ -59,7 +59,7 @@ const Hero = ({ language }) => {
       <motion.main className="flex flex-col items-center justify-center text-center" initial="hidden" animate="visible">
         {/* Heading */}
         <motion.h1
-          className="font-bold text-4xl md:text-6xl text-gray-200 leading-tight tracking-tight mb-3"
+          className="font-bold text-3xl md:text-6xl text-gray-200 leading-tight tracking-tight mb-3"
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
@@ -71,7 +71,7 @@ const Hero = ({ language }) => {
         {/* Typing... effect */}
         {showTyping && (
           <motion.p
-            className="font-medium text-2xl md:text-3xl leading-snug text-gray-400 mb-2"
+            className="font-medium text-xl md:text-3xl leading-snug text-gray-400 mb-2"
             initial="hidden"
             animate="visible"
             variants={{
@@ -88,7 +88,7 @@ const Hero = ({ language }) => {
         {showParagraph && (
           <>
             <motion.p
-              className="font-medium text-2xl md:text-3xl leading-snug text-gray-400 mb-2"
+              className="font-medium text-xl md:text-3xl leading-snug text-gray-400 mb-2"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
@@ -97,7 +97,7 @@ const Hero = ({ language }) => {
               {selectedText.paragraph1}
             </motion.p>
             <motion.p
-              className="font-medium text-2xl md:text-3xl leading-snug text-gray-400"
+              className="font-medium text-xl md:text-3xl leading-snug text-gray-400"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
