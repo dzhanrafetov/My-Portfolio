@@ -63,24 +63,38 @@ background-color: rgb(14, 16, 17);
    animation: slide-in-up 0.8s ease-out;
  }
 
- .animate-bounce {
-   animation: bounce 2s infinite;
- }
-
-@keyframes wave {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
+ @keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .animate-wave {
-  animation: wave 2s infinite;
+  animation: wave 2s ease-in-out;
 }
+
+
 
 /* Add this in your CSS file or Tailwind's config file */
 @keyframes slide-in-down {
@@ -140,6 +154,5 @@ html {
 .hero {
   padding-top: 80px; /* Same height as the header */
 }
-
 
 

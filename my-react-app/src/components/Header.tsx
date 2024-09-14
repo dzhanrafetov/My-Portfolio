@@ -24,7 +24,7 @@ const Header = ({ language }) => {
       {/* Social Icons */}
       <div className="flex space-x-3">
         <a
-          href="mailto:example@example.com"
+          href="mailto:dzhanrafetov@gmail.com"
           target="_blank"
           rel="noreferrer"
           className="text-gray-500 hover:text-gray-300 transition-colors duration-300"
@@ -33,7 +33,7 @@ const Header = ({ language }) => {
         </a>
 
         <a
-          href="https://whatsapp.com"
+          href="https://wa.me/message/FSBOQVLCXA3UC1"
           target="_blank"
           rel="noreferrer"
           className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"

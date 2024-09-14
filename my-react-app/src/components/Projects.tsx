@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import djanamLogo from '../assets/djanam-logo.svg';
 import skarataLogo from '../assets/skarataLogo.jpg';
+import aztecaLogo from "../assets/azteca-logo.png"
+import eacfLogo from "../assets/fondLogo.jpg"
+import dgroupLogo from "../assets/d-group.jpg"
+import zeusLogo from "../assets/zeus2.png"
+import diagnostikaLogo from "../assets/diagnostika.png"
+import githubLogo from "../assets/githubLogo.webp"
 
 const Projects = ({ language }) => {
   const projects = {
@@ -10,61 +16,153 @@ const Projects = ({ language }) => {
       {
         title: 'Djanam & La Opera',
         role: 'Restaurant Website',
-        time: 'Varna, Bulgaria',
         logoSrc: djanamLogo,
-        url: 'https://www.instagram.com',
+        url: 'http://www.djanam-laopera.bg/?lang=en',
         glowColor: 'rgba(255, 0, 255, 0.5)',
         techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
       },
       {
         title: 'Skarata',
         role: 'Restaurant Website',
-        time: 'Sofia',
         logoSrc: skarataLogo,
-        url: 'https://www.messenger.com',
+        url: 'https://skarata.bg/',
         glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'D-Group',
+        role: 'Website for Construction Hypermarket',
+        logoSrc: dgroupLogo,
+        url: 'https://d-group.bg/dudo-stroitelen/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'D-Group',
+        role: 'Website for Furniture Store',
+        logoSrc: dgroupLogo,
+        url: 'https://d-group.bg/dudo-mebeli/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'Azteca',
+        role: 'Website for Cigar Shop',
+        logoSrc: aztecaLogo,
+        url: 'https://azteca-premium.com',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'Zeus & Hera Bar and Dinner',
+        role: 'Restaurant Website',
+        logoSrc: zeusLogo,
+        url: 'https://d-group.bg/zeus-hera/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'Eacf',
+        role: 'Foundation Website',
+        logoSrc: eacfLogo,
+        url: 'https://eacf-bg.eu/',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'D.A. Diagnostics',
+        role: 'Website for Car Diagnostics Service',
+        logoSrc: diagnostikaLogo,
+        url: 'https://dadiagnostics.bg/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'Melifera',
+        role: 'Online Store for Bee Products (Personal Project)',
+        logoSrc: githubLogo,
+        url: 'https://github.com/dzhanrafetov/Melifera-Revamp',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['SpringBoot', 'Redis', 'SpringSecurity','ElasticSearch',"Logstash","OpenFeign"],
       },
     ],
+
     bg: [
       {
-        title: 'Джанам и Ла Опера',
+        title: 'Djanam & La Opera',
         role: 'Уебсайт на ресторант',
-        time: 'Варна, България',
         logoSrc: djanamLogo,
-        url: 'https://www.instagram.com',
+        url: 'http://www.djanam-laopera.bg/',
         glowColor: 'rgba(255, 0, 255, 0.5)',
         techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
       },
       {
-        title: 'Скарата',
+        title: 'Skarata',
         role: 'Уебсайт на ресторант',
-        time: 'София',
         logoSrc: skarataLogo,
-        url: 'https://www.messenger.com',
+        url: 'https://skarata.bg/',
         glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['JavaScript', 'HTML', 'CSS'],
       },
       {
-        title: 'Джанам и Ла Опера',
-        role: 'Уебсайт на ресторант',
-        time: 'Варна, България',
-        logoSrc: djanamLogo,
-        url: 'https://www.instagram.com',
-        glowColor: 'rgba(255, 0, 255, 0.5)',
+        title: 'Azteca',
+        role: 'Уебсайт на магазин за пури',
+        logoSrc: aztecaLogo,
+        url: 'https://azteca-premium.com/',
+        glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
       },
       {
-        title: 'Скарата',
+        title: 'Zeus & Hera Bar and Dinner',
         role: 'Уебсайт на ресторант',
-        time: 'София',
-        logoSrc: skarataLogo,
-        url: 'https://www.messenger.com',
+        logoSrc: zeusLogo,
+        url: 'https://d-group.bg/zeus-hera/index.php',
         glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: "D-Group",
+        role: 'Уебсайт на строителен хипермаркет',
+        logoSrc: dgroupLogo,
+        url: 'https://d-group.bg/dudo-stroitelen/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: "D-Group",
+        role: 'Уебсайт на мебелен магазин',
+        logoSrc: dgroupLogo,
+        url: 'https://d-group.bg/dudo-mebeli/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: "Eacf",
+        role: 'Уебсайт на фондация',
+        logoSrc: eacfLogo,
+        url: 'https://eacf-bg.eu/',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'D.A. Diagnostics',
+        role: 'Уебсайт на сервиз за автомобилна диагностика',
+        logoSrc: diagnostikaLogo,
+        url: 'https://dadiagnostics.bg/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['JavaScript', 'HTML', 'CSS'],
+      },
+      {
+        title: 'Melifera',
+        role: 'Онлайн магазин за пчелни продукти (личен проект).',
+        logoSrc: githubLogo,
+        url: 'https://github.com/dzhanrafetov/Melifera-Revamp',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['SpringBoot', 'Redis', 'SpringSecurity','ElasticSearch',"Logstash","OpenFeign"],
       },
     ],
   };
+
 
   const currentProjects = projects[language || 'en']; // Default to English if no language selected
   const [loaded, setLoaded] = useState(false);

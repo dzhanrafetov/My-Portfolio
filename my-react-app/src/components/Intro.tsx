@@ -1,19 +1,18 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import us from '../assets/uk2.png'; // Correct import for the US flag
-import bg from '../assets/bg2.png';  // Correct import for the Bulgarian flag
-import backgroundVideo from '../assets/8388279-hd_1366_720_25fps.mp4'; // Add your video path
+import us from '../assets/uk2.png';
+import bg from '../assets/bg2.png';
+import backgroundVideo from '../assets/8388279-hd_1366_720_25fps.mp4';
 
 const Intro = ({ onLanguageSelect }) => {
   const [showEnglishText, setShowEnglishText] = useState(true);
 
-  // Toggle between English and Bulgarian text every 2.5 seconds for a smoother feel
   useEffect(() => {
     const interval = setInterval(() => {
       setShowEnglishText((prev) => !prev);
-    }, 2500); // 2.5-second interval
+    }, 2500);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -47,7 +46,7 @@ const Intro = ({ onLanguageSelect }) => {
         {showEnglishText ? (
           <motion.h1
             key="english-text"
-            className="text-4xl sm:text-4xl md:text-6xl font-bold tracking-widest drop-shadow-lg" // Add shadow to text
+            className="text-4xl sm:text-4xl md:text-6xl font-bold tracking-widest drop-shadow-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -58,7 +57,7 @@ const Intro = ({ onLanguageSelect }) => {
         ) : (
           <motion.h1
             key="bulgarian-text"
-            className="text-4xl sm:text-4xl md:text-6xl font-bold tracking-widest drop-shadow-lg" // Add shadow to text
+            className="text-4xl sm:text-4xl md:text-6xl font-bold tracking-widest drop-shadow-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -92,7 +91,7 @@ const Intro = ({ onLanguageSelect }) => {
             transition={{ duration: 1, ease: 'easeOut' }}
           />
           <motion.p
-            className="mt-4 text-lg sm:text-xl drop-shadow-md" // Add shadow to the text
+            className="mt-4 text-lg sm:text-xl drop-shadow-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
@@ -117,7 +116,7 @@ const Intro = ({ onLanguageSelect }) => {
             transition={{ duration: 1, ease: 'easeOut' }}
           />
           <motion.p
-            className="mt-4 text-lg sm:text-xl drop-shadow-md" // Add shadow to the text
+            className="mt-4 text-lg sm:text-xl drop-shadow-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
