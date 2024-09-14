@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp, FaViber } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 const GetInTouch = ({ language }) => {
   const [hovered, setHovered] = useState(false);
