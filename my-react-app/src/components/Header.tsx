@@ -1,4 +1,4 @@
-import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Header = ({ language }) => {
   // Define text content for both English and Bulgarian
@@ -23,6 +23,16 @@ const Header = ({ language }) => {
 
       {/* Social Icons */}
       <div className="flex space-x-3">
+
+ <a
+          href="tel:+359897758062" // Change to a phone number
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+        >
+          <FaPhone size={22} /> {/* Set size to 24px */}
+        </a>
+
         <a
           href="mailto:dzhanrafetov@gmail.com"
           target="_blank"
@@ -32,14 +42,7 @@ const Header = ({ language }) => {
           <FaEnvelope size={22} /> {/* Set size to 24px */}
         </a>
 
-        <a
-          href="https://wa.me/message/FSBOQVLCXA3UC1"
-          target="_blank"
-          rel="noreferrer"
-          className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
-        >
-          <FaWhatsapp size={22} /> {/* Set size to 24px */}
-        </a>
+
       </div>
     </header>
   );

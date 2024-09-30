@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const GetInTouch = ({ language }) => {
   const [hovered, setHovered] = useState(false);
@@ -33,9 +33,8 @@ const GetInTouch = ({ language }) => {
       <div className="relative z-10 flex flex-col items-center space-y-8 text-center px-4">
         {/* Animated Emoji with Wave Animation */}
         <span
-          className={`text-8xl transition-transform duration-300 ${
-            hovered ? 'animate-bounce' : ''
-          } ${waveOnLoad ? 'animate-wave' : ''}`}
+          className={`text-8xl transition-transform duration-300 ${hovered ? 'animate-bounce' : ''
+            } ${waveOnLoad ? 'animate-wave' : ''}`}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
@@ -53,20 +52,21 @@ const GetInTouch = ({ language }) => {
         {/* Social Links */}
         <div className="flex space-x-6 mt-4">
 
+        <a
+            href="tel:+359897758062" // Change to a phone number
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300 text-4xl"
+          >
+            <FaPhone />
+          </a>
           <a
             href="mailto:dzhanrafetov@gmail.com"
             className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300 text-4xl"
           >
             <FaEnvelope />
           </a>
-          <a
-            href="https://wa.me/message/FSBOQVLCXA3UC1"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300 text-4xl"
-          >
-            <FaWhatsapp />
-          </a>
+
 
 
           <a

@@ -9,6 +9,7 @@ import dgroupLogo from "../assets/d-group.jpg"
 import zeusLogo from "../assets/zeus2.png"
 import diagnostikaLogo from "../assets/diagnostika.png"
 import githubLogo from "../assets/githubLogo.webp"
+import eKoleloLogo from "../assets/e-kolelo.png"
 
 const Projects = ({ language }) => {
   const projects = {
@@ -53,6 +54,15 @@ const Projects = ({ language }) => {
         glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
       },
+      {
+        title: 'E-Kolelo',
+        role: 'Bicycle rental website', // Translation from Bulgarian to English
+        logoSrc: eKoleloLogo,
+        url: 'https://d-group.bg/emil/public/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['NodeJS', 'React', 'Tailwind CSS', 'GoogleAPI'],
+      },
+
       {
         title: 'Zeus & Hera Bar and Dinner',
         role: 'Restaurant Website',
@@ -113,6 +123,14 @@ const Projects = ({ language }) => {
         techStack: ['PHP', 'JavaScript', 'HTML', 'CSS'],
       },
       {
+        title: 'E-Kolelo',
+        role: 'Уебсайт за наемане на колело',
+        logoSrc: eKoleloLogo,
+        url: 'https://d-group.bg/emil/public/index.php',
+        glowColor: 'rgba(31, 56, 244, 1)',
+        techStack: ['NodeJS','React','Tailwind CSS' ,'GoogleAPI'],
+      },
+      {
         title: 'Zeus & Hera Bar and Dinner',
         role: 'Уебсайт на ресторант',
         logoSrc: zeusLogo,
@@ -120,6 +138,7 @@ const Projects = ({ language }) => {
         glowColor: 'rgba(31, 56, 244, 1)',
         techStack: ['JavaScript', 'HTML', 'CSS'],
       },
+
       {
         title: "D-Group",
         role: 'Уебсайт на строителен хипермаркет',
